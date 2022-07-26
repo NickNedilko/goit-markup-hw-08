@@ -1,0 +1,45 @@
+
+.menu__item{
+    display: block;
+    position: relative;
+    margin-right: 50px;
+    font-weight: 500;
+    padding: 32px 0;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+
+    color: #212121;
+
+    &:last-child{
+        margin-right: 0;
+    }
+}
+
+.menu__link{
+    display: inline-block;
+    color: #212121;
+
+    @include transition (color);
+    
+
+    &:hover{
+
+        color: var(--link-hover-color);
+
+    }
+
+    &--current::after{
+        position: absolute;
+        display: block;
+        bottom: 0;
+        content:"";
+        max-width: 100%;
+        height: 4px;
+        border-radius: 2px;
+    
+        background-color: #2196F3;
+
+    }
+}
+

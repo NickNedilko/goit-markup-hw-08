@@ -1,0 +1,69 @@
+
+.demand-list__item{
+    margin-bottom: 30px;
+}
+
+.demand-list__inner{
+    @include centeredFlex ();
+    width: 100%;
+    height: 120px;
+    
+    background-color: #F5F4FA;
+    
+}
+.demand-list__icon{
+    width: 65px;
+    height: 70px;
+}
+.demand-list__title{
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+    text-align: left;
+
+    color: var(--title-text-color);
+
+}
+.demand-list__description{
+    margin: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.71;
+    text-align: left;
+    color: #757575;
+
+}
+
+// Стили для планшета
+
+@media screen and (min-width:768px) {
+    .demand-list {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -15px;
+    
+
+.demand-list__item{
+    margin: 15px;
+    width: calc((100% - (4*15px))/2);
+}
+}
+}
+
+// Стили для десктопа
+
+@media screen and (min-width:1200px) {
+    .demand-list {
+        display: flex;
+        margin: -15px;
+
+
+        .demand-list__item {
+            margin: 15px;
+            width: calc((100% - (8*15px))/4);
+        }
+    }
+}

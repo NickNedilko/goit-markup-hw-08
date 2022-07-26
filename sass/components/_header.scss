@@ -1,0 +1,45 @@
+.header{
+    border-bottom: 1px solid #E5E5E5;
+}
+
+.header__wrap{
+position: relative;
+    // display: flex;
+}
+.header__nav{
+    
+    // display: flex;
+}
+
+.header__menu,{
+    
+    // display: flex;
+    // align-items: center;
+    // margin-left: 93px;
+}
+
+.menu__button{
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+}
+
+.menu__button .icon__close{
+display: none;
+}
+
+.menu__button.is-open .icon__close{
+    display: block;
+}
+
+.menu__button.is-open .icon__open {
+    display: none;
+}
+.menu-container{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+}

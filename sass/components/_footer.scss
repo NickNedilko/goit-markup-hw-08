@@ -1,0 +1,63 @@
+.footer{
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #2F303A;
+}
+
+.footer-form{
+@include centeredFlex();
+}
+
+.logo__accient--color{
+    color: #ffffff;
+}
+.footer-contact{
+    margin-top: 20px;
+}
+.footer-flex{
+    align-items: baseline;
+}
+.footer-contact__item{
+    margin-bottom: 9px;  
+}
+.footer-contact__link{
+    font-size: 14px;
+    line-height: 1.71;
+    font-style: normal;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.6);
+
+    @include transition (color);
+
+    &:hover{
+        color: var(--link-hover-color);
+    }
+}
+.footer-contact__link--white{
+    color: #ffffff;
+}
+
+.footer-contact__item:last-child{
+    margin-bottom: 0;
+}
+
+.footer-socials-container{
+    margin-top: 60px;
+    margin-bottom: 60px;
+    padding-top: 12px;
+
+}
+.footer-title{
+display: block;
+margin-top: 0;
+margin-bottom: 20px;
+font-size: 14px;
+font-weight: 700;
+line-height: 1.14;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+
+color: #ffffff;
+    
+}
