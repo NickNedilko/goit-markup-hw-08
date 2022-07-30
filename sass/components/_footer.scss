@@ -1,4 +1,5 @@
 .footer{
+    display: flex;
     text-align: center;
     padding-top: 60px;
     padding-bottom: 60px;
@@ -16,7 +17,13 @@
     margin-top: 20px;
 }
 .footer-flex{
-    align-items: baseline;
+
+@media screen and (min-width:1200px) {
+    display: flex;
+
+}
+
+    
 }
 .footer-contact__item{
     margin-bottom: 9px;  
@@ -41,11 +48,25 @@
 .footer-contact__item:last-child{
     margin-bottom: 0;
 }
+.tablet-footer {
+    @media screen and (min-width:768px) {
+        display: flex;
+        margin-top: 0;
+    }
+}
 
 .footer-socials-container{
     margin-top: 60px;
     margin-bottom: 60px;
     padding-top: 12px;
+    @media screen and (min-width:768px) {
+            margin-top: 0;
+            margin-left: 165px;
+        }
+    @media screen and (min-width:1200px) {
+        margin-left: 70px;
+        margin-bottom: 0;
+    }    
 
 }
 .footer-title{
