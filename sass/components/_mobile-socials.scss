@@ -1,5 +1,6 @@
 .mobile-socials{
     display: flex;
+    flex-wrap: wrap;
     margin-top: 64px;
     @media screen and (min-width:768px) {
         display: none;
@@ -8,6 +9,7 @@
 }
 
 .mobile-socials__item{
+    
     margin-left: 10px;
     &:first-child{
         margin-left: 0px;
