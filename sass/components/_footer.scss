@@ -1,9 +1,15 @@
 .footer{
     display: flex;
-    text-align: center;
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: #2F303A;
+ @media screen and (max-width:479px) {
+    width: 100%;
+ }   
+
+ @media screen and (max-width:1199px) {
+    text-align: center;
+ }   
 }
 
 .footer-form{
