@@ -69,7 +69,6 @@ body {
   padding-right: 15px;
   margin-right: auto;
   margin-left: auto;
-  outline: 1px solid tomato;
 }
 @media screen and (min-width: 480px) {
   .container {
@@ -146,6 +145,7 @@ body {
 }
 
 .menu-container {
+  z-index: 999;
   display: none;
 }
 @media screen and (min-width: 768px) {
@@ -268,7 +268,7 @@ body {
 }
 @media screen and (max-width: 767px) {
   .menu__link--current::after {
-    display: inline-block;
+    display: none;
   }
 }
 
@@ -871,6 +871,15 @@ body {
 @media screen and (max-width: 1199px) {
   .footer {
     text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer .tablet-footer {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
   }
 }
 
@@ -1318,7 +1327,7 @@ body {
           justify-content: center;
   position: relative;
   padding: 40px;
-  width: 450px;
+  max-width: 450px;
   height: 609px;
   border-radius: 4px;
   top: 50%;

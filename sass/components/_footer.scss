@@ -9,7 +9,15 @@
 
  @media screen and (max-width:1199px) {
     text-align: center;
- }   
+    margin-right: auto;
+    margin-left: auto;
+   
+ } 
+ .tablet-footer {
+     @media screen and (min-width:768px) and (max-width:1199px) {
+         display: inline-flex;
+     }
+ }
 }
 
 .footer-form{
