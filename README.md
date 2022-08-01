@@ -1,3 +1,3 @@
-# goit-markup-hw-07.
+# goit-markup-hw-08.
 HTML-разметка макета страницы
-https://nicknedilko.github.io/BEM-Markup-HW-07/
+ https://nicknedilko.github.io/goit-markup-hw-08/
