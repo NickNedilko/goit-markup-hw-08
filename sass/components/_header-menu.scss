@@ -28,22 +28,22 @@
 }
 
 .menu__link{
-    
-    display: block;
     width: 100%;
-    color: #212121;
 
     @include transition (color);
     
-
     &:hover{
 
         color: var(--link-hover-color);
-
     }
+    
+    @media screen and (max-width:767px) {
+        &--current {
+        color: var(--link-hover-color);
+            }
+        }
 
     &--current::after{
-        display: block;
         position: absolute;
         bottom: 0;
         left: 0;
@@ -51,10 +51,12 @@
         width: 100%;
         height: 4px;
         border-radius: 2px;
-    
         background-color: #2196F3;
         @media screen and (max-width:767px) {
-            display: none;
+        display: none;
+        &--current{
+            color: red;
+        }
         }
 
     }

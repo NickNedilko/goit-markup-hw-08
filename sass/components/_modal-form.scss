@@ -14,6 +14,7 @@
 .form__label {
     display: block;
     margin: 0;
+    color: #757575;
     margin-bottom: 4px;
     font-size: 12px;
     line-height: 1.17;
@@ -22,18 +23,22 @@
 
 .form__field {
     position: relative;
-    width: 100%;
+    max-width: 100%;
     height: 40px;
     margin-bottom: 10px;
 }
 
 .form__input {
     padding-left: 42px;
-    width: 370px;
+    width: 100%;
     height: 40px;
     font: inherit;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
+
+    @media screen and (max-width:479px) {
+     width: calc(100% - 2*15px);
+        }
 
     @media screen and (min-width:1200px) {
     width: 448px;
@@ -80,6 +85,10 @@
     border-radius: 4px;
 
     @include transition(border);
+
+    @media screen and (max-width:479px) {
+            width: calc(100% - 2*15px);
+        }
     
 }
 
@@ -90,7 +99,7 @@
 
 .checkbox__label {
     position: relative;
-    
+    color: #757575;
     display: flex;
     justify-content: center;
     align-items: center;

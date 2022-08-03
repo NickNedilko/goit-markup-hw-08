@@ -4,31 +4,31 @@ $bg-gradient:linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0
     margin-left: auto;
     padding-top: 118px;
     padding-bottom: 118px;
-    width: 100%;
+    max-width: 480px;
     height: 400px;
     text-align: center;
     background: var(--hero-bgc-color);
     background-repeat: no-repeat;
     background-size: cover;
     @media screen and (max-width:767px){
-    background-image: $bg-gradient, url("./../images/bg-image/bg-image-mobile.jpg");
+    background-image: $bg-gradient, url("../images/bg-image/bg-image-mobile.jpg");
     
     @media (min-device-pixel-ratio: 2),
         (-webkit-min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
-        background-image: $bg-gradient, url('../../images/bg-image/bg-image-mobile@2x.jpg');
+        background-image: $bg-gradient, url('../images/bg-image/bg-image-mobile@2x.jpg');
 }
     }
     @media screen and (min-width:768px) {
-        max-width: 1200px;
-    background-image: $bg-gradient, url("./../images/bg-image/bg-image-tablet.jpg");
+        max-width: 768px;
+    background-image: $bg-gradient, url("../images/bg-image/bg-image-tablet.jpg");
 
      @media (min-device-pixel-ratio: 2),
             (-webkit-min-device-pixel-ratio: 2),
             (min-resolution: 192dpi),
             (min-resolution: 2dppx) {
-            background-image: $bg-gradient, url('../../images/bg-image/bg-image-tablet@2x.jpg');
+            background-image: $bg-gradient, url('../images/bg-image/bg-image-tablet@2x.jpg');
                }
            }
 
@@ -37,7 +37,7 @@ $bg-gradient:linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0
             padding-bottom: 200px;
             max-width: 1600px;
             height: 600px;
-            background-image: $bg-gradient, url("./../images/bg-image/bg-image-desktop.jpg");
+            background-image: $bg-gradient, url("../images/bg-image/bg-image-desktop.jpg");
             
     @media (min-device-pixel-ratio: 2),
             (-webkit-min-device-pixel-ratio: 2),

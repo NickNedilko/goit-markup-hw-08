@@ -23,9 +23,11 @@
     line-height: 1.14;
     text-transform: uppercase;
     text-align: left;
-
     color: var(--title-text-color);
 
+    @media screen and (max-width:767px) {
+        text-align: center;
+    }
 }
 .demand-list__description{
     margin: 0;
